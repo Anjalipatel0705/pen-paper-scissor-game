@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper and scissors Game</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            text-align: center;
+        }
+        h1{
+            background-color: #081b31;
+            color:white;
+            height:4rem;
+            /* it makes images to vertically center */ 
+          line-height:4rem ;
+
+        }
+        .choice{
+            height: 200px;
+            width:200px;
+            border-radius:50% ;
+            display:flex;
+            justify-content:center;
+            align-items:center ;
+            
+        }
+        img{
+            height:170px;
+            width:170px;
+            object-fit: cover;
+            border-radius: 50%;
+            
+
+
+        }
+        .choice:hover{
+            /* opacity:0.5; */
+            cursor:pointer;
+            background-color:black ;
+        }
+        .choices{
+            display:flex;
+            justify-content: center;
+            gap:3rem;
+            margin-top: 5rem;
+            
+        }
+        .score-board{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size:2rem ;
+            gap:5rem;
+            margin-top:3rem;
+        }
+        #user-score,#computer-score{
+            font-size:3rem ;
+        }
+        .msg-container{
+            margin-top:5rem ;
+        }
+      #msg{
+            background-color:#081b31;
+            color:white ;
+            font-size:2rem ;
+            margin-top: 5rem;
+            display:inline;
+            border-radius:1rem ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Rock paper and scissors Game</h1>
+    <div class="choices">
+    <div class="choice" id="rock"><img src="rock.png"/></div>
+    <div class="choice" id="paper"><img src="paper.png"/></div>
+    <div class="choice" id="scissor"><img src="scissor.jpeg"/></div></div>
+    
+    <div class="score-board">
+        <div class="class">
+            <p id="user-score">0</p>
+            <p>user</p>
+        </div>
+
+        <div class="class">
+            <p id="computer-score">0</p>
+            <p>computer</p>
+        </div>
+    </div>
+
+    <div class="msg-container">
+        <p id="msg">Play your Move</p>
+    </div>
+
+    <script src="game.js"></script>
+    
+    
+
+</body>
+</html>
